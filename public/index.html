@@ -48,5 +48,12 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      // const meta = document.getElementsByTagName('meta')  
+      // console.log(meta)
+      // meta.keywords.content = "My new page keywords";  
+      // meta.description.content = "My new page description"
+      document.querySelector('meta[property=og\\:image]').setAttribute("content", "My new page description!!");
+    </script>
   </body>
 </html>
