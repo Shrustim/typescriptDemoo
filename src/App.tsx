@@ -29,15 +29,16 @@ function App() {
     <div className="App">
       <Helmet>
                 <meta charSet="utf-8" />
-                <title>My Title</title>
-                <link rel="canonical" href="http://mysite.com/example" />
                 <meta property="og:title" content="Typescript Sample Demo oo" />
                 <meta property="og:site_name" content="Shrushti"/>
                 <meta property="og:url" content="https://typescript-demo-react.herokuapp.com/"/>
-                <meta property="og:description" content="hello hiiiii hell"/>
+                <meta property="og:description" content="hello hiiiii Abc"/>
                 <meta property="og:type" content="website"/>
                 <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png"/>
    
+                <title>My Title</title>
+                <link rel="canonical" href="https://typescript-demo-react.herokuapp.com/" />
+               
             </Helmet>
       {/* <ReactSEOMetaTags
       website={{ ...siteMetadata }}
