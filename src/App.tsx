@@ -49,7 +49,7 @@ function App() {
    
  
     <div className="App">
-            <Helmet>
+            {/* <Helmet>
                 <meta charSet="utf-8" />
                 <meta property="og:title" content="Typescript Sample " />
                 <meta property="og:site_name" content="Shrushti"/>
@@ -61,7 +61,7 @@ function App() {
                 <title>My Title</title>
                 <link rel="canonical" href="https://typescript-demo-react.herokuapp.com/" />
                
-            </Helmet>
+            </Helmet> */}
       {/* <ReactSEOMetaTags
       website={{ ...siteMetadata }}
       // breadcrumb={[
