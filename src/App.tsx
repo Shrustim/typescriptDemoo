@@ -6,7 +6,7 @@ import FormsInType from "./components/FormsInType";
 import CustomHookExample from "./components/CustomHookExample";
 import { LifecycleMethod, Information ,LifecycleMethodWithFunction} from "./components/LifeCycleMethods";
 // import { ReactSEOMetaTags } from 'react-seo-meta-tags'
-// import {Helmet} from "react-helmet";
+import {Helmet} from "react-helmet";
 import DocumentMeta from 'react-document-meta';
 // const siteMetadata={
 //   url: 'https://google.com/about',
@@ -25,33 +25,33 @@ import DocumentMeta from 'react-document-meta';
 //     searchUrl: 'https://www.google.com/search?q=',
 //   }
 // }
-const meta = {
-  title: 'Some Meta Title',
-  description: 'I am a description, and I can create multiple tags',
-  canonical: 'http://example.com/path/to/page',
-  meta: {
-    charset: 'utf-8',
-    name: {
-      keywords: 'react,meta,document,html,tags'
-    },
-    og:{
-      title:"Test heelllllo i am shrushti",
-      url:"https://typescript-demo-react.herokuapp.com/",
-      description:"Testhello hiiiii Abc",
-      image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png"
-    }
-  }
+// const meta = {
+//   title: 'Some Meta Title',
+//   description: 'I am a description, and I can create multiple tags',
+//   canonical: 'https://typescript-demo-react.herokuapp.com/',
+//   meta: {
+//     charset: 'utf-8',
+//     name: {
+//       keywords: 'react,meta,document,html,tags'
+//     },
+//     og:{
+//       title:"Test heelllllo i am shrushti",
+//       url:"https://typescript-demo-react.herokuapp.com/",
+//       description:"Testhello hiiiii Abc",
+//       image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png"
+//     }
+//   }
  
-};
+// };
 function App() {
   return (
-    <DocumentMeta {...meta} >
+    // <DocumentMeta {...meta} >
    
  
     <div className="App">
-            {/* <Helmet>
+            <Helmet>
                 <meta charSet="utf-8" />
-                <meta property="og:title" content="Typescript Sample Demo oo" />
+                <meta property="og:title" content="Typescript Sample " />
                 <meta property="og:site_name" content="Shrushti"/>
                 <meta property="og:url" content="https://typescript-demo-react.herokuapp.com/"/>
                 <meta property="og:description" content="hello hiiiii Abc"/>
@@ -61,7 +61,7 @@ function App() {
                 <title>My Title</title>
                 <link rel="canonical" href="https://typescript-demo-react.herokuapp.com/" />
                
-            </Helmet> */}
+            </Helmet>
       {/* <ReactSEOMetaTags
       website={{ ...siteMetadata }}
       // breadcrumb={[
@@ -89,7 +89,7 @@ function App() {
       <CustomHookExample/>
       </header>
     </div>
-    </DocumentMeta>
+    // </DocumentMeta>
   );
 }
 
