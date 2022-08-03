@@ -6,27 +6,40 @@ import FormsInType from "./components/FormsInType";
 import CustomHookExample from "./components/CustomHookExample";
 import { LifecycleMethod, Information ,LifecycleMethodWithFunction} from "./components/LifeCycleMethods";
 import { ReactSEOMetaTags } from 'react-seo-meta-tags'
-const siteMetadata={
-  url: 'https://google.com/about',
-  title:  'This is a 70 character long title with a lot of padding to make it so!',
-  datePublished: '2019-10-06T13:56:03.123Z',
-  description: 'This is a 200 character long description of this web page which is quite interesting and which describes its contents well with a lot of relevant keywords and isn\'t just general marketing mumbo-jumbo.',
-  language: 'en-US',
-  image: 'https://miro.medium.com/max/640/1*0ZhzN-2EUXmov3HHwOjKCQ.pnghttp://website.com/image.png',
-  author: {
-    email: 'person@gmail.com',
-    name: 'John Smith',
-    image: 'https://miro.medium.com/max/640/1*0ZhzN-2EUXmov3HHwOjKCQ.png',
-  },
-  site: {
-    siteName: 'IMDb',
-    searchUrl: 'https://www.google.com/search?q=',
-  }
-}
+import {Helmet} from "react-helmet";
+// const siteMetadata={
+//   url: 'https://google.com/about',
+//   title:  'This is a 70 character long title with a lot of padding to make it so!',
+//   datePublished: '2019-10-06T13:56:03.123Z',
+//   description: 'This is a 200 character long description of this web page which is quite interesting and which describes its contents well with a lot of relevant keywords and isn\'t just general marketing mumbo-jumbo.',
+//   language: 'en-US',
+//   image: 'https://miro.medium.com/max/640/1*0ZhzN-2EUXmov3HHwOjKCQ.pnghttp://website.com/image.png',
+//   author: {
+//     email: 'person@gmail.com',
+//     name: 'John Smith',
+//     image: 'https://miro.medium.com/max/640/1*0ZhzN-2EUXmov3HHwOjKCQ.png',
+//   },
+//   site: {
+//     siteName: 'IMDb',
+//     searchUrl: 'https://www.google.com/search?q=',
+//   }
+// }
 function App() {
   return (
     <div className="App">
-      <ReactSEOMetaTags
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>My Title</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+                <meta property="og:title" content="Typescript Sample Demo oo" />
+                <meta property="og:site_name" content="Shrushti"/>
+                <meta property="og:url" content="https://typescript-demo-react.herokuapp.com/"/>
+                <meta property="og:description" content="hello hiiiii hell"/>
+                <meta property="og:type" content="website"/>
+                <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png"/>
+   
+            </Helmet>
+      {/* <ReactSEOMetaTags
       website={{ ...siteMetadata }}
       // breadcrumb={[
       //   { name: 'My Site', url: 'https://me.com' },
@@ -41,7 +54,9 @@ function App() {
       // blogPost={{ ...blogPost }}
       // facebook={{ facebookAppId: 'abc123' }}
       // twitter={{ twitterUser: '@mickey_mouse' }}
-    />
+    /> */}
+          
+
       <header className="App-header">
       <ToogleDiv/>
       <FormsInType/>

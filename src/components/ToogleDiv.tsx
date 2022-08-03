@@ -39,7 +39,7 @@ export default function ToogleDiv() {
           </FacebookShareButton>
 
           <TwitterShareButton
-            url={"https://typescript-demo-react.herokuapp.com/"}
+            url={"https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"}
             title={"Demo1"}
             className="Demo__some-network__share-button"
           >
